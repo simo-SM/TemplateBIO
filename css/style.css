@@ -1,0 +1,648 @@
+/* this code CSS */
+:root{
+    --color_bg :#000000;
+    --color_box :#2A292C;
+    --color_text :#FFFFFF;
+    --color_len :#707070;
+    --color_border:rgb(9, 190, 160);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: dashed;
+    list-style: none;
+     /* outline: 1px solid red; */
+}
+body{
+    background-color: var(--color_bg);
+    font-weight: 500;
+    color: var(--color_text);
+    font-family: 'Courier Prime', 'sans-serif';
+    height: 100vh;
+}
+.container{
+    padding: 10px;
+    
+    width: 100%;
+    height: 100vh;
+    padding-left: 40px;
+    padding-right: 40px;
+   
+    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: -10px;
+    /* width: 100%; */
+}
+.images {
+    height: 100%;
+    padding: 10px;
+}
+.images img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.about_interests{
+    display: block;
+    flex-direction: column;
+    padding: 10px;
+    width: 1005;
+    
+}
+.about{
+    background-color: var(--color_box);
+    padding:20px ;
+    border-radius: 10px;
+    transition: all .6s ease;
+    animation: appear1 ease-out;
+    animation-timeline:view() ;
+    animation-range: entry 0% cover 30% ;
+   
+}
+
+.interests{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    padding: 20px ;
+    background-color: var(--color_box);
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: all .6s ease;
+    
+}
+.elemment  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    padding-left: 50px;
+    transition: all .6s ease;
+}
+.elemment li {
+    background-color: var(--color_bg);
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+
+}
+/* === this code len ==== */
+
+.card {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    transition: all .6s ease;
+
+}
+.freelancer{
+    background-color: var(--color_box);
+    padding: 10px ;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    
+}
+
+.fr1{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    transition: all .6s ease;
+}
+.old{
+    background-color: var(--color_bg);
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+.lenF ,.lenM{
+    width: 100%;
+    padding: 25px;
+
+}
+.lenF .len ,
+.lenM .len{
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--color_len);
+}
+.meetzed{
+    background-color: var(--color_box);
+    padding: 10px ;
+    border-radius: 10px;
+    width: 100%;
+    transition: .3s;
+    
+}
+/* =======box Design======= */
+.order{
+    width: 100%;
+    
+}
+/* ========design_tools========= */
+.design_tools{
+    background-color: var(--color_box);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+    border-radius: 10px;
+    padding: 25px;
+    position: relative;
+    
+}
+
+.design_tools .app{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+}
+.design_tools .app a{
+    background-color: var(--color_bg);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+.design_tools img {
+    width: 50px;
+    height: 50px;
+    animation: floaty 3s ease infinite;
+    transition: all .6s ease;
+}
+
+/* =======editing_tools ======== */
+.editing_tools{
+    background-color: var(--color_box);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 25px;
+    position: relative;
+}
+
+.editing_tools .app{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.editing_tools .app a{
+    background-color: var(--color_bg);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+.editing_tools img{
+    width: 50px;
+    height: 50px;
+    animation: floaty 3s ease infinite;
+    transition: all .6s ease;
+   
+}
+/* ======language_tools======= */
+.language_tools{
+    background-color: var(--color_box);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 25px;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+.language_tools .app{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.language_tools .app a{
+    background-color: var(--color_bg);
+    width: 50px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 40px rgba(0,0,0,.6);
+}
+.language_tools img {
+    width: 50px;
+    height: 50px;
+    animation: floaty 3s  infinite;
+    transition: all .6s ease;
+}
+.design_tools img:hover,
+.editing_tools img:hover,
+.language_tools img:hover{
+    transform: translateY(20px);
+    transition: all .6s ease;
+    
+
+}
+
+.box_2{
+    display: flex;
+    gap: 50px;
+    padding: 10px;
+}
+.order2{
+    background-color: var(--color_box);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    
+}
+.el1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.el1 span{
+    background-color: var(--color_bg);
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+/* ===========portfolio========== */
+.praTf {
+    padding: 10px;
+    width: 100%;
+    transition: all .6s ease;
+    
+   
+}
+.portfolio{
+    background-color: var(--color_box);
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 10px 40px rgba(0,0,0,.6);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1000;
+   
+}
+
+.portfolio a img {
+    width: 50px;
+    height: 50px;
+    animation: floaty 3s  infinite;
+    transition: all .6s ease;
+   
+}
+.portfolio a img:hover{
+    transform: (10px);
+    transition: all 1.3s ease;
+}
+.photo{
+    width: 100%;
+    margin: 20px 0;
+    background-color: var(--color_box);
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,.6);
+}
+.photo img{
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    overflow: hidden;
+    
+}
+.footer{
+    overflow: hidden;
+    /* width: 100%; */
+    height: 550px;
+    
+}
+/* anmition elemment */
+.images img,
+.about,
+.interests,
+.freelancer,
+.meetzed,
+.design_tools,
+.editing_tools,
+.language_tools,
+.order2{
+    animation: appear1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+/* ===================================== */
+@keyframes floaty {
+    0%{
+        transform: translateY(100px);
+        transition: 0.5s;
+    }
+    50%{
+        transform: translateY(0px);
+        transition: 0.5s;
+    }
+    100%{
+        transform:translateY(0px);
+        transition: 0.5s ;
+    }
+}
+/* about */
+@keyframes appear1  {
+    from{
+        opacity: 0;
+        transform: translateY(50px) scale(0.9);
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+@keyframes anim_div {
+    0%{
+        transform: translateY(100px);
+        transition: 0.5s;
+    }
+    50%{
+        transform: translateY(0px);
+        transition: 0.5s;
+    }
+    100%{
+        transform:translateY(0px);
+        transition: 0.5s ;
+    }
+}
+
+/* ====================================== */
+/* ==============this media======================== */
+/* ====================================== */
+
+/* &=========media 768px → 991px =========== */
+@media (max-width:767px) {
+    .footer {
+        overflow: hidden;
+        width: 100%;
+        height: -10px;
+    }
+    .photo {
+        transform: translateY(0px);
+    }
+    .media767 img{
+        transform: translateY(30px);
+        width: 100%;
+        height: 100%;
+        
+    }
+
+}
+@media  (max-width: 991px) {
+
+    /* ============== */
+    .images {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+        
+    }
+    .images img{
+        width:100% ;
+        height:100%;
+        max-width: 300px;
+        max-height: 300px;
+        border-radius:50%;
+        transition: all .3s ease;
+        border: 3px solid var(--color_border);
+
+    }
+    .images img:hover{
+        transform: (10px);
+        transition: all .3s ease;
+    }
+    .header{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .about_interests{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .interests{
+        flex-direction: column;
+        width: 100%;
+    }
+    .elemment{
+        /* flex-direction: column; */
+        width: 100%;
+        gap: 10px;
+        padding: 5px;
+        height: 100%;
+        
+    }
+    .card{
+        width: 100%;
+        flex-direction: column;
+    }
+    .box_2{
+        flex-direction: column;
+        width: 100%;
+    }
+    .container{
+        padding: 10px;
+        margin: 10;
+        width: 100%;
+        height: 100vh;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .design_tools{
+        gap: 0;
+    }
+    .elemment::before{
+        content: "";
+        background-color: var(--color_len);
+        border: 0px solid var(--color_len);
+        height: 0px;
+        left: 0px;
+        position: absolute;
+    }
+    .design_tools::before{
+        content: "";
+        background-color: var(--color_len);
+        border: 0px solid var(--color_len);
+        height: 0px;
+        left: 0px;
+        position: absolute;
+    }
+    .editing_tools::before{
+        content: "";
+        background-color: var(--color_len);
+        border: 0px solid var(--color_len);
+        height: 0px;
+        left: 0px;
+        position: absolute;
+    }
+    .language_tools::before{
+        content: "";
+        background-color: var(--color_len);
+        border: 0px solid var(--color_len);
+        height:0px;
+        left: 0px;
+        position: absolute;
+    }
+    .portfolio::before{
+        content: "";
+        background-color: var(--color_len);
+        border: 0px solid var(--color_len);
+        height: 0px;
+        left: 0px;
+        position: absolute;
+        transform: translateY(-10px);
+    }
+    .box_2{
+        gap: 20px;
+    }
+    .order2{
+        z-index: 900;
+    }
+    .praTf{
+        width: 100%;
+    }
+    .portfolio{
+        width: 100%;
+        transform: translateY(-20px);
+       
+    }
+    .footer {
+        overflow: hidden;
+        width: 100%;
+        height: 150px;
+    }
+    .photo {
+        transform: translateY(0px);
+    }
+    .photo img{
+        transform: translateY(0px);
+        width: 100%;
+        height: 100%;
+        
+    }
+
+
+}
+/* &=========media 992px → 1200px =========== */
+
+@media(min-width: 992px) and (max-width: 1200px) {
+    .header {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .images img {
+        max-width: 250px;
+    }
+    .about_interests {
+        width: 100%;
+    }
+    .card {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .box_2 {
+        flex-direction: column;
+    }
+    .portfolio {
+        gap: 40px;
+    }
+    /* ============= */
+    .about{
+        width: 100%;
+        height: 100%;
+    }
+    .container{
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+        height: 100vh;
+        padding-left: 0px;
+        padding-right: 50px;
+    }
+    .elemment  {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        position: relative;
+        padding-left: 0px;
+        transition: all .6s ease;
+    }
+    .footer {
+        overflow: hidden;
+        /* width: 100%; */
+        /* height: 100px; */
+    }
+}
+/* &=========media 1200px → 1400px =========== */
+@media (min-width: 1201px)  and (max-width:1400px){
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .header{
+        gap: 30px;
+    }
+    .card{
+        gap: 30px;
+    }
+}
+/* &=========media 1400px =========== */
+@media (min-width: 1401px) {
+    .container {
+        max-width: 1400px;
+        margin: auto;
+    }
+    .header {
+        gap: 50px;
+    }
+    .card {
+        gap: 40px;
+    }
+}
