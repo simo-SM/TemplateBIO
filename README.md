@@ -24,7 +24,7 @@ Add images: Place your personal images or other visuals in the images/ folder an
 
 🌐 Live Preview
 
-You can see the template live here: TemplateBIO Preview
+You can see the template live here: TemplateBIO Preview → https://simo-sm.github.io/TemplateBIO/
 
 📄 License
 
